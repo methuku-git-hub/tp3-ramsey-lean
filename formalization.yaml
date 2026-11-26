@@ -9,8 +9,8 @@ project:
     case s=3, they asked for the order of r(P_3,t), a question later
     reiterated by Bohman, Mubayi and Picollelli. Together, these results
     give a lower bound of Omega(t^2/log t) and an upper bound of O(t^2)
-    for r(P_3,t). We improve the upper bound to O(t^2/log log t), making
-    progress towards a conjecture of Mattheus, Mubayi, Nie and Verstraete.
+    for r(P_3,t). We improve the upper bound to O(t^2/log log t), confirming
+    the subquadratic growth predicted by Mattheus, Mubayi, Nie and Verstraëte.
     The main upper bound is formalized unconditionally in Lean 4.
   authors: ["Abhishek Methuku"]
   responsible_maintainers: ["Abhishek Methuku"]
@@ -88,7 +88,8 @@ review:
     The full local build and transitive axiom audit passed. Comparator matched
     the exact main theorem and both Lean's kernel and NanoDa accepted the
     exported proof. The local macOS Comparator run disabled its sandbox.
-    Independent human review and Palomar registration are not claimed.
+    Palomar registered the verified snapshot as PALOMAR-2026-11-26-000054,
+    version 1, at commit 323a2c59f9cf617414b76b26e8449da1faab3eb9.
 alignment:
   namespace: "TP3"
   statements:
