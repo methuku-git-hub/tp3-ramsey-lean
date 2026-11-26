@@ -1,0 +1,758 @@
+WARNING: Sandbox disabled, this run is not trustworthy.
+Resolving dependencies
+Building Challenge
+⚠ [1992/1993] Replayed Challenge
+warning: Challenge.lean:41:8: declaration uses `sorry`
+Build completed successfully (1993 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, TP3.ramsey_bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Solution
+⚠ [3274/3355] Replayed TP3.FiniteClassNoise
+warning: TP3/FiniteClassNoise.lean:43:0: automatically included section variable(s) unused in theorem `TP3.auxiliary_success_probability`:
+  [Fintype U]
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3276/3355] Replayed TP3.DependentSampling
+warning: TP3/DependentSampling.lean:48:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.required_card_le`:
+  [Fintype V]
+  [Fintype U]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype U] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/DependentSampling.lean:76:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.conflicts_nonempty`:
+  [Fintype V]
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3277/3355] Replayed TP3.SamplingBounds
+warning: TP3/SamplingBounds.lean:23:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.slice_card_sum`:
+  [Fintype V]
+  [Fintype U]
+  [DecidableEq V]
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype U] [DecidableEq V] [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/SamplingBounds.lean:28:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.processed_all`:
+  [Fintype V]
+  [Fintype U]
+  [DecidableEq V]
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype U] [DecidableEq V] [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/SamplingBounds.lean:30:18: This simp argument is unused:
+  (d.classOf x).isLt
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [processed]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3278/3355] Replayed TP3.CoarseSampling
+warning: TP3/CoarseSampling.lean:19:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.processed_subset_union_iff`:
+  [Fintype V]
+  [Fintype U]
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype U] [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3279/3355] Replayed TP3.SharedMarks
+warning: TP3/SharedMarks.lean:72:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.externalWitness_mono`:
+  [Fintype V]
+  [Fintype U]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [Fintype U] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3283/3355] Replayed TP3.WitnessCounts
+warning: TP3/WitnessCounts.lean:41:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.small_support_card`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/WitnessCounts.lean:50:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.large_support_card`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/WitnessCounts.lean:60:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.small_indices_card`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/WitnessCounts.lean:79:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.large_indices_card`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/WitnessCounts.lean:112:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.witness_has_support`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3285/3355] Replayed TP3.FiniteCardinality
+warning: TP3/FiniteCardinality.lean:26:0: automatically included section variable(s) unused in theorem `TP3.FiniteLaw.mean_filter_card`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/FiniteCardinality.lean:31:56: This simp argument is unused:
+  Finset.sum_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3287/3355] Replayed TP3.ConflictDeletion
+warning: TP3/ConflictDeletion.lean:24:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.conflicts_class`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/ConflictDeletion.lean:36:12: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [allConflicts] at he
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3289/3355] Replayed TP3.ConflictSupports
+warning: TP3/ConflictSupports.lean:32:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.three_support_card`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/ConflictSupports.lean:43:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.four_support_card`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/ConflictSupports.lean:53:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.three_indices_card`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/ConflictSupports.lean:78:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.four_indices_card`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/ConflictSupports.lean:106:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.mem_threeIndices`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/ConflictSupports.lean:119:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.mem_fourIndices`:
+  [Fintype U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3291/3355] Replayed TP3.ExpectedConflictLoss
+warning: TP3/ExpectedConflictLoss.lean:56:68: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExpectedConflictLoss.lean:62:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExpectedConflictLoss.lean:56:68: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExpectedConflictLoss.lean:62:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3292/3355] Replayed TP3.ClassMarks
+warning: TP3/ClassMarks.lean:109:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ClassMarks.lean:109:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3297/3355] Replayed TP3.FinalSample
+warning: TP3/FinalSample.lean:18:0: automatically included section variable(s) unused in theorem `TP3.DependentSample.Data.withinClassPairs_card`:
+  [Fintype U]
+  [DecidableEq V]
+  [DecidableEq U]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype U] [DecidableEq V] [DecidableEq U] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3299/3355] Replayed TP3.PairSystems
+warning: TP3/PairSystems.lean:50:40: Variable name `ha` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _ha
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TP3/PairSystems.lean:82:17: This simp argument is unused:
+  ← Finset.sum_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [degree]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3300/3355] Replayed TP3.GraphPeeling
+warning: TP3/GraphPeeling.lean:37:0: automatically included section variable(s) unused in theorem `TP3.residual_disjoint_block`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/GraphPeeling.lean:103:0: automatically included section variable(s) unused in theorem `TP3.DenseDecomposition.residual_sparse`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/GraphPeeling.lean:114:0: automatically included section variable(s) unused in theorem `TP3.DenseDecomposition.incidence_bound`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3301/3355] Replayed TP3.ListIncidences
+warning: TP3/ListIncidences.lean:16:0: automatically included section variable(s) unused in theorem `TP3.intersection_sum`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/ListIncidences.lean:19:10: This simp argument is unused:
+  ← Finset.sum_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TP3/ListIncidences.lean:24:8: This simp argument is unused:
+  ← Finset.sum_filter
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TP3/ListIncidences.lean:50:0: automatically included section variable(s) unused in theorem `TP3.disjoint_neighborhood_list_bound`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3302/3355] Replayed TP3.ResidualDensity
+warning: TP3/ResidualDensity.lean:15:0: automatically included section variable(s) unused in theorem `TP3.induced_pairs_card_le_square`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/ResidualDensity.lean:26:0: automatically included section variable(s) unused in theorem `TP3.DenseDecomposition.induced_covered`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3303/3355] Replayed TP3.PairCompletions
+warning: TP3/PairCompletions.lean:35:0: automatically included section variable(s) unused in theorem `TP3.triple_eq_insert_completion`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3304/3355] Replayed TP3.PairDegreeCounting
+warning: TP3/PairDegreeCounting.lean:14:0: automatically included section variable(s) unused in theorem `TP3.triple_pairs_at_vertex`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3305/3355] Replayed TP3.MediumPairLists
+warning: TP3/MediumPairLists.lean:14:0: automatically included section variable(s) unused in theorem `TP3.pair_eq_pair_of_mem`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/MediumPairLists.lean:30:6: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TP3/MediumPairLists.lean:35:9: Variable name `e` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _e
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3306/3355] Replayed TP3.PairGraph
+warning: TP3/PairGraph.lean:19:0: automatically included section variable(s) unused in theorem `TP3.pair_image_injective`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3310/3355] Replayed TP3.ExtractionData
+warning: TP3/ExtractionData.lean:98:8: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [pairLists, hh] at hB
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [3311/3355] Replayed TP3.LinkTriangles
+warning: TP3/LinkTriangles.lean:65:4: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp [hzw, hTeq, hUeq]
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: TP3/LinkTriangles.lean:87:20: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [3314/3355] Replayed TP3.CleanExtraction
+warning: TP3/CleanExtraction.lean:12:0: automatically included section variable(s) unused in theorem `TP3.hasF_mono`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/CleanExtraction.lean:16:0: automatically included section variable(s) unused in theorem `TP3.hasThreeOnFour_mono`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/CleanExtraction.lean:21:0: automatically included section variable(s) unused in theorem `TP3.present_instances_mono`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3317/3355] Replayed TP3.StarOrientation
+warning: TP3/StarOrientation.lean:18:0: automatically included section variable(s) unused in theorem `TP3.orientedLeaf_unique`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/StarOrientation.lean:22:0: automatically included section variable(s) unused in theorem `TP3.orientedLeaf_asymm`:
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/StarOrientation.lean:66:17: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TP3/StarOrientation.lean:94:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.leaf_ne_centre`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/StarOrientation.lean:111:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.leaves_ne_vertex`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/StarOrientation.lean:114:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.centre_ne_vertex`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3318/3355] Replayed TP3.InteractionVertices
+warning: TP3/InteractionVertices.lean:13:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.interacting_centres_distinct`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3319/3355] Replayed TP3.CentreConditioning
+warning: TP3/CentreConditioning.lean:17:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.activeLeaves_disjoint`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/CentreConditioning.lean:122:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.chosenLeaves_eq_inter`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3322/3355] Replayed TP3.GoodInteractions
+warning: TP3/GoodInteractions.lean:18:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.interactionSupport_pair`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3323/3355] Replayed TP3.AwayFeasible
+warning: TP3/AwayFeasible.lean:15:8: automatically included section variable(s) unused in theorem `TP3.mem_sampledVertices`:
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/AwayFeasible.lean:64:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.interactionSupport_subset`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3324/3355] Replayed TP3.FibreMoments
+warning: TP3/FibreMoments.lean:14:0: automatically included section variable(s) unused in theorem `TP3.union_inter_eq_of_subsets`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3325/3355] Replayed TP3.UniformFibres
+warning: TP3/UniformFibres.lean:14:20: Variable name `hx` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hx
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3326/3355] Replayed TP3.ObservedMoments
+warning: TP3/ObservedMoments.lean:19:0: automatically included section variable(s) unused in theorem `TP3.StarOrientation.availableLeaves_congr`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3329/3355] Replayed TP3.FeasibleInsertion
+warning: TP3/FeasibleInsertion.lean:61:51: Variable name `hv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3332/3355] Replayed TP3.RestrictionWeights
+warning: TP3/RestrictionWeights.lean:75:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3333/3355] Replayed TP3.AwayRemoval
+warning: TP3/AwayRemoval.lean:58:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TP3/AwayRemoval.lean:59:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3334/3355] Replayed TP3.ExtensionWeights
+warning: TP3/ExtensionWeights.lean:61:15: This simp argument is unused:
+  Bool.true_eq
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: TP3/ExtensionWeights.lean:83:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TP3/ExtensionWeights.lean:90:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3336/3355] Replayed TP3.VertexInsertionGain
+warning: TP3/VertexInsertionGain.lean:49:19: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TP3/VertexInsertionGain.lean:51:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TP3/VertexInsertionGain.lean:67:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: TP3/VertexInsertionGain.lean:69:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: TP3/VertexInsertionGain.lean:58:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/VertexInsertionGain.lean:58:27: Unused tactic linter: `congr 3` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/VertexInsertionGain.lean:58:27: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3338/3355] Replayed TP3.AveragedDensity
+warning: TP3/AveragedDensity.lean:72:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/AveragedDensity.lean:72:44: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/AveragedDensity.lean:76:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/AveragedDensity.lean:76:44: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/AveragedDensity.lean:72:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/AveragedDensity.lean:72:44: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/AveragedDensity.lean:76:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/AveragedDensity.lean:76:44: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3339/3355] Replayed TP3.StructuredIndependence
+warning: TP3/StructuredIndependence.lean:52:28: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/StructuredIndependence.lean:52:28: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3340/3355] Replayed TP3.RandomClasses
+warning: TP3/RandomClasses.lean:14:0: automatically included section variable(s) unused in theorem `TP3.FiniteLaw.event_singleton`:
+  [DecidableEq β]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq β] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/RandomClasses.lean:31:6: `simp` already closes the goal
+
+Hint: Use `simp` instead of `simpa`:
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: TP3/RandomClasses.lean:46:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/RandomClasses.lean:46:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3341/3355] Replayed TP3.ExtractionFormula
+warning: TP3/ExtractionFormula.lean:42:5: Variable name `hd` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hd
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TP3/ExtractionFormula.lean:85:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionFormula.lean:85:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3343/3355] Replayed TP3.ExtractionParameters
+warning: TP3/ExtractionParameters.lean:70:15: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionParameters.lean:70:19: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionParameters.lean:72:15: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionParameters.lean:72:19: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionParameters.lean:73:29: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionParameters.lean:73:33: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionParameters.lean:70:19: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: TP3/ExtractionParameters.lean:72:19: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: TP3/ExtractionParameters.lean:73:33: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3344/3355] Replayed TP3.ExtractionError
+warning: TP3/ExtractionError.lean:60:24: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:60:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:60:56: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:64:24: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:64:42: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:64:56: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:66:84: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:66:88: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:75:48: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:75:52: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionError.lean:66:88: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: TP3/ExtractionError.lean:75:52: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: TP3/ExtractionError.lean:60:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExtractionError.lean:60:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExtractionError.lean:60:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExtractionError.lean:64:24: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExtractionError.lean:64:42: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExtractionError.lean:64:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3345/3355] Replayed TP3.ExtractionGrowth
+warning: TP3/ExtractionGrowth.lean:9:61: Variable name `hC` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hC
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TP3/ExtractionGrowth.lean:16:27: Variable name `hk` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hk
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: TP3/ExtractionGrowth.lean:107:56: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionGrowth.lean:107:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionGrowth.lean:107:75: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionGrowth.lean:107:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: TP3/ExtractionGrowth.lean:107:56: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3346/3355] Replayed TP3.ExtractionTheorem
+warning: TP3/ExtractionTheorem.lean:39:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionTheorem.lean:39:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3347/3355] Replayed TP3.VertexRestriction
+warning: TP3/VertexRestriction.lean:17:8: automatically included section variable(s) unused in theorem `TP3.mem_vertexRestriction`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/VertexRestriction.lean:21:0: automatically included section variable(s) unused in theorem `TP3.vertex_image_subset`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: TP3/VertexRestriction.lean:26:0: automatically included section variable(s) unused in theorem `TP3.vertex_image_injective`:
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [3348/3355] Replayed TP3.ExtractionIndependence
+warning: TP3/ExtractionIndependence.lean:51:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionIndependence.lean:51:36: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionIndependence.lean:51:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExtractionIndependence.lean:51:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExtractionIndependence.lean:75:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionIndependence.lean:75:36: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/ExtractionIndependence.lean:75:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: TP3/ExtractionIndependence.lean:75:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3351/3355] Replayed TP3.MainIndependence
+warning: TP3/MainIndependence.lean:70:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: TP3/MainIndependence.lean:70:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Build completed successfully (3355 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, TP3.ramsey_bound, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Solution
+Running nanoda kernel on solution
+nanoda kernel accepts the solution
+Running Lean default kernel on solution
+Lean default kernel accepts the solution
+Your solution is okay!

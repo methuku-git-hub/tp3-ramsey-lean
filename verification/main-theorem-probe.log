@@ -1,0 +1,12 @@
+TP3.ramsey_bound :
+  ∃ C,
+    0 < C ∧
+      ∃ t₀,
+        3 ≤ t₀ ∧
+          ∀ (t : ℕ),
+            t₀ ≤ t →
+              ∃ N,
+                ↑N ≤ C * ↑t ^ 2 / Real.log (Real.log ↑t) ∧
+                  ∀ (H : Finset (Finset (Fin N))),
+                    TP3.IsTripleSystem H → TP3.HasTightPath H ∨ ∃ S, S.card = t ∧ TP3.Independent H S
+'TP3.ramsey_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,100 @@
+version: "v0.4"
+project:
+  name: "On the Ramsey number of a tight path of length 3 versus a clique"
+  description: >-
+    Let r(P_s,t) denote the Ramsey number of the 3-uniform tight path with
+    s edges versus a clique on t vertices. Results of Phelps and Rodl give
+    r(P_2,t)=Theta(t^2/log t). In 2013, Cooper and Mubayi proved that
+    r(P_s,t)=Theta(t^2) for every fixed s at least 4. For the remaining
+    case s=3, they asked for the order of r(P_3,t), a question later
+    reiterated by Bohman, Mubayi and Picollelli. Together, these results
+    give a lower bound of Omega(t^2/log t) and an upper bound of O(t^2)
+    for r(P_3,t). We improve the upper bound to O(t^2/log log t), making
+    progress towards a conjecture of Mattheus, Mubayi, Nie and Verstraete.
+    The main upper bound is formalized unconditionally in Lean 4.
+  authors: ["Abhishek Methuku"]
+  responsible_maintainers: ["Abhishek Methuku"]
+  license: "Apache-2.0"
+classification:
+  arxiv: ["math.CO"]
+  msc2020: ["05C65", "05D10", "05D40"]
+sources:
+  - title: "On the Ramsey number of a tight path of length 3 versus a clique"
+    authors: ["Abhishek Dhawan", "Abhishek Methuku"]
+    type: "manuscript"
+    relationship: "formalizes"
+    location: "25 November 2026 manuscript, main theorem (label thm:ramsey)"
+    note: >-
+      LaTeX source SHA-256
+      efebeaa7f3753f411d1eb1ab11b543e474b5f13e00a447edc103f03db0a20024.
+      The manuscript is not modified or included in this repository.
+related_formalizations:
+  - id: "https://github.com/methuku-git-hub/locally-ramsey-lean"
+    relationship: "adapts"
+    note: >-
+      The initial generic finite-law section of FiniteProbability.lean
+      was adapted from this earlier project; source SHA-256 at reuse was
+      77b70967a9c2bec0bb1ff4953b1e7287433078aa0d71ff151fb60bb9538c2403.
+      The remaining TP3 development is contained here, with no dependency
+      on the earlier repository and no imported unproved theorem.
+status:
+  scope: >-
+    The main Ramsey upper bound r(P_3,t)=O(t^2/log log t), without extra
+    assumptions. The extraction lemma, graph-specific averaged inequality,
+    independence bound and final Ramsey reduction are all proved. The
+    optimal conjectured order and historical lower bounds are outside scope.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+  main_results:
+    - declaration: "TP3.ramsey_bound"
+      file: "TP3/MainRamsey.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+automation:
+  methods:
+    - method: "agent"
+      models: ["GPT-6"]
+      framework: "OpenAI Codex"
+      tool_setup: >-
+        OpenAI Codex developed and checked the Lean proofs under the
+        direction of Abhishek Methuku, using Lean 4, Mathlib tactics,
+        shell and file tools, Comparator, and NanoDa.
+      cost:
+        spend_usd: "not tracked"
+      prompting_notes: >-
+        Formalize the exact main Ramsey theorem; complete the dependent
+        sampling, deletion and averaged arguments without extra assumptions
+        or proof holes; run Comparator and prepare Palomar registration.
+  notes: "AI-generated Lean proofs under the user's direction."
+fidelity:
+  divergences: >-
+    The Ramsey number is expressed as a quantified coloring property on Fin N,
+    with an independent set of exactly t vertices. All logarithms are natural.
+    The class experiment uses independent Bernoulli trials with the required
+    conditional acceptance probabilities. Joint probabilities and shared-mark
+    errors are proved for that experiment. Conflict deletion fixes one endpoint
+    of each conflicting pair and uses the larger constants 3 and 162, whose
+    numerical specialization is proved. Dense block occurrences carry disjoint
+    charged edge sets. The sufficient general degree bound is 3n rather than n.
+    The final integer k is maximal subject to exp(k^60) at most sqrt(3n),
+    instead of using a real-root floor formula. These adjustments change only
+    constants and thresholds. No theorem hypothesis is added.
+review:
+  status: "agent-reviewed"
+  reviewers: []
+  notes: >-
+    The full local build and transitive axiom audit passed. Comparator matched
+    the exact main theorem and both Lean's kernel and NanoDa accepted the
+    exported proof. The local macOS Comparator run disabled its sandbox.
+    Independent human review and Palomar registration are not claimed.
+alignment:
+  namespace: "TP3"
+  statements:
+    - source: "Main Ramsey theorem, label thm:ramsey"
+      lean: "TP3.ramsey_bound"
+      module: "TP3.MainRamsey"
+      status: "proved"
+      note: "Exact unconditional upper bound, with no extra hypotheses."
+acknowledgements: "Lean, Mathlib, and the author's prior finite-probability development."

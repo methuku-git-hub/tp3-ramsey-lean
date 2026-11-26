@@ -1,0 +1,13 @@
+/.lake/
+*.ilean
+*.olean
+*.olean.private
+*.olean.server
+*.trace
+__pycache__/
+HANDOFF.md
+formalization.draft.yaml
+publication/
+verification/build-*.log
+verification/current-development-check.log
+verification/fresh-kernel.log
